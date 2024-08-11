@@ -1,0 +1,712 @@
+html{
+  
+    max-width: 100%;
+     overflow-x: hidden;
+     scroll-behavior: smooths; 
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    
+  
+    
+    
+}
+     /* ---------------Logo section--------------- */
+
+ .logo a{
+   color: white;
+   height: 98px;
+   width: 100px;
+   margin: 0px;
+   margin-top: 18px;
+   left: 105px;
+   display: flex;
+   text-decoration: none;
+   position: fixed;
+   font-family:sans-serif;
+   font-weight: 400;
+   font-size: 31px;
+   letter-spacing: 2px;
+   
+
+}
+
+         /* --------------NAVIGATION--------------- */
+nav{
+  
+    margin: 0%;
+    position: fixed;
+    left: 0%;
+    top: 0;
+    width: 150%;
+    height: 70px;
+    background-color: #000935;
+    z-index: 1;
+    
+    
+}
+
+
+ul {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    height: 43px;
+    line-height: 30px;
+    margin: 0px;
+    margin-top: 13px;
+    right: 0;
+    left: 550px;     /* -----450----------*/
+    padding: 10px;
+    display: flex;
+    color:rgb(204, 203, 203);
+    text-decoration: none;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 790;
+
+}
+
+
+
+ /* -------------------nav ul a:active{------------------------------
+
+    color: white;
+}
+    
+nav a:active:after{
+
+   opacity: 3;
+   background-color: white;
+   height: 2.5px;
+   width:85%;
+   position: absolute;
+   bottom: 33%;
+   transition: none;
+
+
+}
+-------------------------------------------------------------------------------- */
+
+     /* -----------------------nav hover-------------------- */
+
+
+nav ul  a:hover{
+    
+    color: white; 
+    
+}
+
+nav ul a::after{
+    content:'';
+    background-color: white;
+    height: 2.5px;
+    width: 85%;
+    position: absolute;
+    left: 8%;
+    pointer-events: none;
+    bottom: 21px;
+    opacity: 0;
+    transition: all ;
+    
+    
+}
+
+nav ul a:hover::after{
+      opacity: 1;
+      
+}
+
+
+      /* ---------------------Main section---------------------------- */
+
+#section1-main{
+    max-width: 100%;
+    overflow: hidden;
+    display:inline-block;
+    width: 100%;
+    height: 100vh;
+    background-color: #000935;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+       
+
+        /* --------------Texts in Main--------------- */
+
+
+.content{
+    
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(17%,-50%);
+    margin: 0%;
+    margin-top: 3%;
+    
+    
+}
+
+h1{
+    color: white;
+    width: 700px;
+   font-size: 49px;
+  font-weight: bolder;
+  font-family:sans-serif;
+  margin: 0%;
+  
+  
+   
+}
+
+h2{
+    letter-spacing: 0.9px;
+    font-size: 20px;
+    font-weight: 650;
+    color: rgb(203, 203, 203);
+    margin-top: 2%;
+    
+}
+
+
+      /* --------------contact us btn in Main --------------- */
+
+.button .main-btn{
+    margin-top: 35px;
+    font-size: large;
+    padding: 3px 15px  ;  
+    border: 2px solid #fff;
+    border-radius: 5%;      
+   
+}
+.button .main-btn{
+    width: 120px;
+    height: 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#0000;
+    color:white;
+    transition: 0.6s ease-out;
+    text-decoration: none;
+    
+}
+
+       /* --------------contact us boton in Main  Hover--------------- */
+
+
+.button .main-btn:hover{
+    background-color:white;
+    text-decoration: none;
+    color: rgb(23, 163, 84); 
+    
+
+
+}
+
+      /* --------------THe picture in Main --------------- */
+
+      
+.hero-img{
+
+   display: flex;
+   width: 490x;
+   height: 470px;
+   float: right ;
+   margin: 65px;
+   margin-bottom: 0%;
+   margin-top: 10%;
+   -webkit-animation: mover 3s infinite alternate;
+   animation: mover 3s infinite alternate;
+}
+          
+     /* --------------THe picture in Main animation kiisa  --------------- */
+ 
+@-webkit-keyframes mover{
+
+0% { transform: translateY(0);}
+100%{ transform: translateY(-15px);}
+}
+
+@keyframes mover{
+
+    0% { transform: translateY(0);}
+100%{ transform: translateY(-15px);}
+}
+
+   /* ------------------------------section2-shop now ---------------------------- */
+ #section2-shop{
+    overflow-x: hidden;
+    background-color:white;
+    height: 100vh;
+    
+}
+
+
+#section2-shop h1{
+  width: 800px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+  transform: translate(75%);
+  margin: 50px;
+  color: black;
+  margin-top: 5%;
+  text-decoration: underline ;
+  text-decoration-color: black;
+  text-decoration-thickness: 3px underline thickness;
+  -moz-text-decoration-color: black;
+  text-underline-offset: 20px;
+  text-transform: capitalize;
+ 
+
+}
+
+
+#section2-shop p{
+  
+  transform: translate(41%);
+  font-size: 16px;
+  color: rgb(157, 154, 154);
+  margin-top: -15px;
+  
+
+}
+
+
+.images{
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  position: relative;
+  cursor: pointer; 
+ 
+
+}
+
+.hormuud{
+  margin: 1%;  
+   border-radius: 100%;
+   box-shadow: 0px 0.5px 3px #71cd14;
+   border: none;
+   text-shadow: 0 1px 1px #71cd14;
+   overflow: hidden;
+   
+}
+
+
+.Somnet{
+  margin: 1%;
+  border-radius: 100%;
+  box-shadow: 0px 0.5px 3px #71cd14;
+  border: none;
+  text-shadow: 0 1px 1px #71cd14;
+  overflow: hidden;
+
+}
+
+
+.Somtel{
+  margin: 1%;
+  border-radius: 100%;
+  box-shadow: 0px 0.5px 3px #71cd14;
+  border: none;
+  text-shadow: 0 1px 1px #71cd14;
+  overflow: hidden;
+
+  
+  
+}
+
+
+.Amtel{
+  margin: 1%;
+  border-radius: 100%;
+  box-shadow: 0px 0.5px 3px #71cd14;
+  border: none;
+  text-shadow: 0 1px 1px #71cd14;
+  overflow: hidden;
+  
+}
+
+
+      /* ---------------------------------qoraalka ku dhex jiro sawirada shirkadaha ---------------------------- */
+
+.member-info{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  
+  
+ 
+}
+
+
+
+.member-info-content h4{
+  margin-top: 130px;
+  font-size:  1.55em;
+  font-weight: 900;
+  
+}
+
+    
+ /* -------hover ka qoraalka ku dhex jiro sawirada shirkadaha---------- */
+
+
+.member-info:hover{
+
+  opacity: 1;
+}
+
+
+
+/* ---meesha aan ku xabeeyay background-color ka saaran sawirada shirkada ------ */
+
+
+.member-info-content{
+ position: absolute;
+ height: 310px;
+ width: 310px;
+ margin: 0%;
+ top: 13%;
+ border-radius: 100%;
+
+
+}
+
+
+.member-info-content:hover{
+  opacity: .8;
+ visibility: visible;
+ background: rgb(68, 68, 161);
+
+}
+
+
+
+     
+ /* ---------------------------------help page section  ---------------------------- */
+
+ #help{
+
+  background-color: whitesmoke;
+  height: 900px;
+  width: 100%;
+  display: inline-block;
+  
+
+
+ }
+ 
+ .help-page{
+  flex-wrap: wrap;
+  padding: 27px 76px;
+  width: 400px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 10px 30px rgb(12, 0, 3);
+  margin: 3%;
+  bottom: 10%;
+  font-size: 17px;
+
+ }
+  
+ .help-page:hover{
+
+  background-color: rgb(64, 227, 62);
+ }
+
+ .help-button a{
+  margin-top: 10px;
+  padding: 2px 20px;
+  font-size: large;
+
+
+     
+
+ }
+ .help-button a{ 
+  background-color: #6fc01e;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  color:white;
+  transition: 0.6s ease-out;
+  text-decoration: none;}
+
+
+
+
+  .help-button a:hover{
+    background-color:white;
+    color: black; 
+    
+  }
+
+
+  .help-img img{
+   margin-top:-53%;
+    width: 750px;
+    float: right;
+    position: relative;
+  }
+
+      /* ------------------------------about us section  (our team) ---------------------------- */
+
+
+#wrapper{
+  background: #2e2b98;
+  font-family: 'Josefin Sans', sans-serif;
+  height: 100vh;
+}
+
+#wrapper h1{
+
+  font-size: 52px;
+  transform: translateX(90%);
+  color: white;
+  
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  margin-top: 10%;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: #000000;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 190%;
+  background: #cbd2cd;
+}
+
+.team .team_member .team_img img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border-radius: 100%;
+}
+       /* --------------------------------contact  section--------------------------- */
+
+.html{
+  min-height: 100vh;
+  width: 100%;
+  background: #5365b4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  
+}
+
+#booking{
+  height: 60vh;
+  width: 55%;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 40px 76px 76px 40px ;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.384);
+}
+
+.Message{
+  font-size: 28px;
+  font-weight: bolder;
+  font-family: serif;
+  color: #0a0c97;
+  transform: translate(38%);
+}
+
+label{
+  font-size: 18px;
+}
+
+
+
+.html p{
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-bottom: 2%;
+  margin-top: 2%;
+
+}
+
+
+
+input[type="button"] {
+  background-color: #0a0c97;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input[type="button"]:hover{
+  background-color: #5365b4;
+}
+
+
+
+      
+      /* ------------------------------footer section--------------------------- */
+
+footer{
+background-color: #000935;
+height: 40vh;
+color: #fff;
+display: flex;
+justify-content: center;
+font-size: 15px;
+padding: 0%;
+}
+
+
+footer h2{
+  font-weight: 600;
+  font-size: 28px;
+  color: #fff;
+  font-family: sans-serif;
+
+}
+.Geenyo{
+
+  color: #c9cdcb;
+  padding: 50px;
+  font-weight:bold ;
+
+}
+
+.Geenyo a{
+  color: white;
+  font-weight: bolder;
+  font-family: Arial,;
+  font-size: 17px;
+  margin: 0%;
+  
+
+}
+
+.useful-links a{
+  color: #c9cdcb;
+  font-weight:bold ;
+  text-decoration: none;
+
+}
+
+.useful-links a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+
+
+.useful-links{
+  color: #c9cdcb;
+  padding: 50px;
+  font-weight:bold ;
+
+}
+
+
+
+
+.our-service{
+  color: #dadbda; 
+  padding: 50px;
+
+}
+
+.our-service a{
+  
+
+  font-weight:bold ;
+  text-decoration: none;
+  color: rgb(232, 226, 226);
+}
+
+.our-service a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+.subscribe h3{
+  font-family: Arial;
+  font-weight: bolder;
+  font-size: 19px;
+  color: #fff;
+  margin-top: 20%;
+
+}
+
+
+      /* ------------------------------input ka footer ka ku dhexjiro--------------------------- */
+
+
+.form input[type="text"]{width: 50%;
+  padding: 15px 45px;
+}
+
+b{ 
+  font-size: 15px;
+  font-weight: bolder;
+}
